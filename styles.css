@@ -1,0 +1,243 @@
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+  --dark-grey: #414246;
+  --white: #f9f9f9;
+  --section-padding: 20px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: var(--white);
+}
+
+section,
+footer {
+  width: 100%;
+  height: auto;
+  padding: var(--section-padding);
+}
+
+header {
+  padding: 10px 0;
+}
+
+.hamburger-menu {
+  margin-bottom: 10px;
+}
+
+.hamburger-menu > div {
+  width: 30px;
+  height: 5px;
+  background-color: var(--black);
+  margin: 5px 0 0 20px;
+}
+
+.homepage {
+  color: var(--orange);
+  padding: var(--section-padding);
+  width: 100%;
+  text-align: start;
+}
+
+#conference-name {
+  font-size: 18px;
+}
+
+#conference-name p {
+  margin-bottom: -20px;
+}
+
+#main-title {
+  font-size: 24px;
+}
+
+#conference-info,
+#conference-date {
+  color: var(--black);
+}
+
+.main-program {
+  padding: var(--section-padding);
+  background-color: var(--dark-grey);
+}
+
+#main-program,
+.program-details {
+  color: white;
+}
+
+#main-program h2 {
+  font-size: 18px;
+}
+
+.programs {
+  display: flex;
+  gap: 10px;
+  padding: 10px 10px;
+  background: rgba(211 211 211 / 10%);
+  margin: 10px 0;
+}
+
+.program-names {
+  color: var(--orange);
+  flex: 30%;
+}
+
+.program-details {
+  flex: 70%;
+}
+
+#join-link {
+  background-color: var(--orange);
+  color: var(--white);
+  width: 80%;
+  min-height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 10px;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.speakers-column,
+#main-program,
+#past-expo-info,
+#partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+#feat-speakers {
+  width: 200px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.speaker-details {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 30px;
+}
+
+.speaker-details img {
+  width: 120px;
+  height: 120px;
+}
+
+.speaker-info {
+  padding: 0 10px;
+  margin-top: -20px;
+}
+
+.speaker-info span {
+  font-size: 12px;
+}
+
+.speaker-name {
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+.speaker-position {
+  color: var(--orange);
+  margin: 20px 0 5px;
+}
+
+.hr2 {
+  border: 1px solid lightgrey;
+  width: 20px;
+  margin: 10px 0 5px;
+}
+
+hr {
+  border: 1px solid var(--orange);
+  width: 40px;
+  margin-top: -8px;
+}
+
+/* About section */
+
+.conference-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background: var(--white);
+}
+
+#conference-info {
+  border: 1px solid lightgrey;
+  height: auto;
+  background-color: var(--white);
+  text-align: start;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#conference-info h3 {
+  font-weight: 400;
+}
+
+#conference-contact {
+  color: var(--black);
+  margin: 5%;
+}
+
+#conference-date h2 {
+  margin-bottom: -5px;
+}
+
+#conference-date p {
+  margin-bottom: 20px;
+}
+
+#conf-sect-detail {
+  width: 90%;
+}
+
+.past-expo {
+  background: var(--white);
+}
+
+#past-expo-info p {
+  margin: 0 10%;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.partners {
+  background: var(--dark-grey);
+  color: var(--white);
+}
+
+footer {
+  background: var(--white);
+  color: var(--black);
+  display: flex;
+}
+
+#footer-logo {
+  flex: 50%;
+  padding: 5%;
+}
+
+#footer-info {
+  flex: 50%;
+  padding: 5%;
+}
