@@ -13,13 +13,31 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
       <nav>
         <div class="hamburger-menu">
           <div></div>
           <div></div>
           <div></div>
         </div>
+      </nav>
+    </header>
+    <header class="header-desktop">
+      <nav class="nav-top">
+        <img src="" alt="facebook" />
+        <img src="" alt="twitter" />
+        <div>English</div>
+        <div>My Page</div>
+        <div>Logout</div>
+      </nav>
+      <nav class="nav-bottom">
+        <img src="./Images/Logo.png" alt="logo" />
+        <div>About</div>
+        <div>Program</div>
+        <div>Join</div>
+        <div>Sponsor</div>
+        <div>News</div>
+        <div>FE Campaign</div>
       </nav>
     </header>
     <section class="homepage">
@@ -172,16 +190,31 @@
         </div>
       </div>
     </section>
-    <section class="partners">
+    <section class="partners-desktop">
       <div id="mozilla"></div>
       <div id="google"></div>
       <div id="naver"></div>
       <div id="daumkakao"></div>
       <div id="airbnb"></div>
     </section>
-    <footer>
-      <div id="footer-logo"></div>
-      <div id="footer-info"></div>
+    <section class="partners">
+      <div id="partners">
+        <h3>Partners</h3>
+        <hr />
+      </div>
+      <div id="mozilla"></div>
+      <div id="google"></div>
+      <div id="naver"></div>
+      <div id="daumkakao"></div>
+      <div id="airbnb"></div>
+    </section>
+    <footer class="footer-mobile">
+      <div id="footer-logo">
+        <img src="./Images/Logo.png" alt="logo" id="footer-img" />
+      </div>
+      <div id="footer-info">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
     </footer>
   </body>
 </html>

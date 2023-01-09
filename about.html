@@ -13,13 +13,31 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header class="header-mobile">
       <nav>
         <div class="hamburger-menu">
           <div></div>
           <div></div>
           <div></div>
         </div>
+      </nav>
+    </header>
+    <header class="header-desktop">
+      <nav class="nav-top">
+        <img src="" alt="facebook" />
+        <img src="" alt="twitter" />
+        <div>English</div>
+        <div>My Page</div>
+        <div>Logout</div>
+      </nav>
+      <nav class="nav-bottom">
+        <img src="./Images/Logo.png" alt="logo" id="nav-logo" />
+        <div class="nav-items">About</div>
+        <div class="nav-items">Program</div>
+        <div class="nav-items">Join</div>
+        <div class="nav-items">Sponsor</div>
+        <div class="nav-items">News</div>
+        <div id="campaign">FE Campaign</div>
       </nav>
     </header>
     <section class="homepage2">
@@ -70,16 +88,22 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quam.
         </p>
       </div>
-      <div>
-        <img src="./Images/past-expo1.jpeg" alt="expo-2020" class="conf-img" />
-        <div id="conference1"></div>
-      </div>
-      <div>
-        <img src="./Images/past-expo2.png" alt="expo-2021" class="conf-img" />
-        <div id="conference2"></div>
+      <div class="expo-pics">
+        <div>
+          <img
+            src="./Images/past-expo1.jpeg"
+            alt="expo-2020"
+            class="conf-img"
+          />
+          <div id="conference1"></div>
+        </div>
+        <div>
+          <img src="./Images/past-expo2.png" alt="expo-2021" class="conf-img" />
+          <div id="conference2"></div>
+        </div>
       </div>
     </section>
-    <section class="partners">
+    <section class="partners-mobile">
       <div id="partners">
         <h3>Partners</h3>
         <hr />
@@ -90,7 +114,15 @@
       <div id="daumkakao"></div>
       <div id="airbnb"></div>
     </section>
-    <footer>
+    <footer class="footer-mobile">
+      <div id="footer-logo">
+        <img src="./Images/Logo.png" alt="logo" id="footer-img" />
+      </div>
+      <div id="footer-info">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </footer>
+    <footer class="footer-desktop">
       <div id="footer-logo">
         <img src="./Images/Logo.png" alt="logo" id="footer-img" />
       </div>

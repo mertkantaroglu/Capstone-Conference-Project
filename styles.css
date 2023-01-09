@@ -21,13 +21,13 @@ footer {
   width: 100%;
   height: auto;
   padding: var(--section-padding);
-}
+} 
 
 header {
   padding: 10px 0;
   background-color: var(--white);
-  width: 105%;
-  padding-right: 20px;
+  width: 106%;
+  padding-right: 25px;
 }
 
 .hamburger-menu {
@@ -50,7 +50,7 @@ header {
 }
 
 #conference-info {
-  border: 2px solid white;
+  border: 3px solid white;
   height: auto;
   background-color: var(--white);
   text-align: start;
@@ -117,7 +117,7 @@ header {
 .speakers-column,
 #main-program,
 #past-expo-info,
-#partners {
+#partners-mobile {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -180,9 +180,9 @@ hr {
 .homepage2 {
   color: var(--orange);
   padding: var(--section-padding);
-  width: 100%;
+  width: 105%;
   text-align: center;
-  margin: 0 1%;
+  background: var(--white);
 }
 
 .conference-section {
@@ -278,8 +278,9 @@ hr {
 }
 
 .past-expo {
-  background: var(--white);
+  background: white;
   margin-bottom: 10px;
+  width: 105%;
 }
 
 #past-expo-info h3 {
@@ -302,16 +303,18 @@ hr {
   padding: 0 0 20px 0;
 }
 
-.partners {
+.partners-mobile {
   background: var(--dark-grey);
   color: var(--white);
-  width: 100%;
+  width: 105%;
+  text-align: center;
 }
 
 footer {
   background: var(--white);
   color: var(--black);
   display: flex;
+  width: 105%;
 }
 
 #footer-logo {
@@ -319,12 +322,107 @@ footer {
 }
 
 #footer-img {
-  width: 100%;
-  height: 95%;
-  padding-top: 2%;
+  width: 60%;
+  height: 40%;
+  padding: 5% 5% 5% 30%;
 }
 
 #footer-info {
   flex: 50%;
   margin-left: 5%;
 }
+
+@media (min-width: 768px) {
+.header-mobile {
+  display: none;
+}
+
+.header-desktop {
+  margin-top: -10px;
+}
+
+  .nav-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 5%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    height: 2.5rem;
+    align-items: center;
+    width: 97%;
+  }
+
+  .nav-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    width: 102%;
+    padding: 10px 0;
+  }
+
+  #nav-logo {
+    margin-right: 18rem;
+    width: 150px;
+    height: 50px;
+  }
+
+  .nav-items:hover {
+    color: var(--orange);
+  }
+
+  .nav-bottom #campaign {
+    border: 4px solid var(--orange);
+    color: var(--orange);
+    width: auto;
+    padding: 12px;
+    margin-right: 50px;
+  }
+
+  .expo-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .conf-img {
+    width: 400px;
+    margin: 0 10px;
+  }
+
+  .footer-desktop{
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .footer-desktop {
+    background-color: var(--black);
+    color: white;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .partners-mobile {
+    display: none;
+  }
+
+  #conference-name p {
+    display: none;
+  }
+
+#main-name {
+  font-size: 32px;
+  width: 40%;
+  margin: auto;
+}
+
+  #conference-info2 {
+    width: 70%;
+    margin: auto;
+  }
+}
+  
