@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: var(--white);
+  background: white;
 }
 
 section,
@@ -25,10 +25,13 @@ footer {
 
 header {
   padding: 10px 0;
+  background-color: var(--white);
+  width: 105%;
+  padding-right: 20px;
 }
 
 .hamburger-menu {
-  margin-bottom: 10px;
+  margin: 10px 0 10px 1%;
 }
 
 .hamburger-menu > div {
@@ -43,23 +46,20 @@ header {
   padding: var(--section-padding);
   width: 100%;
   text-align: start;
+  background-color: var(--white);
 }
 
-#conference-name {
-  font-size: 18px;
+#conference-info {
+  border: 2px solid white;
+  height: auto;
+  background-color: var(--white);
+  text-align: start;
+  padding: 10px;
+  font-size: 14px;
 }
 
-#conference-name p {
-  margin-bottom: -20px;
-}
-
-#main-title {
-  font-size: 24px;
-}
-
-#conference-info,
-#conference-date {
-  color: var(--black);
+#conference-info h3 {
+  font-weight: 400;
 }
 
 .main-program {
@@ -96,20 +96,22 @@ header {
 #join-link {
   background-color: var(--orange);
   color: var(--white);
-  width: 80%;
-  min-height: 10%;
+  width: fit-content;
+  height: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px auto 10px;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 40px 50px;
 }
 
 .speakers {
   display: flex;
   flex-direction: column;
   padding: var(--section-padding);
-  background: var(--white);
+  background: white;
 }
 
 .speakers-column,
@@ -135,17 +137,19 @@ header {
 }
 
 .speaker-details img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
 }
 
 .speaker-info {
-  padding: 0 10px;
+  padding: 0 10px 0 20px;
   margin-top: -20px;
 }
 
-.speaker-info span {
-  font-size: 12px;
+.speaker-info p {
+  font-size: 10px;
+  line-height: 125%;
 }
 
 .speaker-name {
@@ -156,12 +160,13 @@ header {
 .speaker-position {
   color: var(--orange);
   margin: 20px 0 5px;
+  font-size: 12px;
 }
 
 .hr2 {
   border: 1px solid lightgrey;
   width: 20px;
-  margin: 10px 0 5px;
+  margin: 10px 0 0;
 }
 
 hr {
@@ -172,31 +177,74 @@ hr {
 
 /* About section */
 
+.homepage2 {
+  color: var(--orange);
+  padding: var(--section-padding);
+  width: 100%;
+  text-align: center;
+  margin: 0 1%;
+}
+
 .conference-section {
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
-  background: var(--white);
+  padding-bottom: 0;
+  background: white;
 }
 
-#conference-info {
-  border: 1px solid lightgrey;
-  height: auto;
-  background-color: var(--white);
-  text-align: start;
+#conference-name {
+  font-size: 18px;
+}
+
+#conference-name p {
+  margin-bottom: -10px;
+}
+
+#main-title {
+  font-size: 24px;
+}
+
+#conference-info,
+#conference-date {
+  color: var(--black);
+}
+
+#conference-info2 {
+  color: var(--black);
   padding: 10px;
   font-size: 14px;
 }
 
-#conference-info h3 {
-  font-weight: 400;
+#conference-info2 p {
+  font-size: 14px;
+  padding: 15px;
+  background: white;
+  border: 1px solid lightgrey;
+  line-height: 1.5;
+  text-align: center;
 }
 
 #conference-contact {
   color: var(--black);
   margin: 5%;
+}
+
+#conference-contact h5 {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#conference-contact p {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 #conference-date h2 {
@@ -209,21 +257,55 @@ hr {
 
 #conf-sect-detail {
   width: 90%;
+  margin: 0 auto;
+}
+
+#conf-sect-detail p {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+#conf-sect-logo img {
+  width: 105%;
+  padding: 20px;
+  margin: 0 0 20px -25px;
+}
+
+#hr3 {
+  border: 1px solid var(--grey);
+  width: 111%;
+  margin: 0 auto 0 -5%;
 }
 
 .past-expo {
   background: var(--white);
+  margin-bottom: 10px;
+}
+
+#past-expo-info h3 {
+  font-size: 20px;
+  font-weight: inherit;
 }
 
 #past-expo-info p {
   margin: 0 10%;
   padding: 5% 0;
   text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.conf-img {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto 0 6%;
+  padding: 0 0 20px 0;
 }
 
 .partners {
   background: var(--dark-grey);
   color: var(--white);
+  width: 100%;
 }
 
 footer {
@@ -234,10 +316,15 @@ footer {
 
 #footer-logo {
   flex: 50%;
-  padding: 5%;
+}
+
+#footer-img {
+  width: 100%;
+  height: 95%;
+  padding-top: 2%;
 }
 
 #footer-info {
   flex: 50%;
-  padding: 5%;
+  margin-left: 5%;
 }
