@@ -51,6 +51,20 @@ header {
   background-color: var(--white);
 }
 
+.header-desktop::after, .header-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('./Images/luffy.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  filter: grayscale(100%)
+}
+
 #conference-name {
   background-image: url('./Images/orange-bg.png');
   color: transparent;
@@ -166,7 +180,7 @@ header {
 }
 
 #feat-speakers {
-  width: 222px;
+  width: 60%;
   text-align: center;
   margin: auto;
   font-size: 18px;
@@ -224,6 +238,13 @@ header {
   width: 75px;
   height: 75px;
   margin: 10px;
+}
+
+.logos img:hover {
+border: 4px solid var(--orange);
+border-radius: 16px;
+padding: 10px;
+transition: 200ms ease-in-out;
 }
 
 hr {
@@ -319,7 +340,7 @@ hr {
   margin-bottom: 20px;
 }
 
-#conf-sect-name {
+#conf-sect-name h3 {
   font-size: 24px;
   font-weight: 400;
 }
@@ -429,7 +450,7 @@ hr {
   background: var(--white);
   color: var(--black);
   display: flex;
-  width: 100%;
+  height: 150px
 }
 
 #footer-logo {
@@ -437,14 +458,20 @@ hr {
 }
 
 #footer-img {
-  width: 60%;
-  height: 40%;
-  padding: 5% 5% 5% 30%;
+  width: 35%;
+  height: 50px;
+  margin: 25px 0 25px 55%;
 }
 
 #footer-info {
   flex: 50%;
   margin-left: 5%;
+}
+
+#footer-info p {
+  padding-left: 5%;
+  padding-top: 2%;
+  font-size: 18px;
 }
 
 .footer-desktop {
@@ -492,6 +519,10 @@ hr {
     margin-right: 5.5%;
   }
 
+  .nav-top div:hover {
+    color: var(--orange);
+  }
+
   .nav-bottom {
     display: flex;
     justify-content: flex-end;
@@ -503,13 +534,16 @@ hr {
     box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
   }
 
+  .nav-bottom a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+  }
+
   #campaign {
     margin-right: 5%;
   }
 
-  .nav-top div:hover {
-    color: var(--orange);
-  }
 
   #nav-logo {
     width: 150px;
@@ -555,7 +589,7 @@ hr {
       font-size: 16px;
     }
 
-  #conf-sect-name {
+  #conf-sect-name h3 {
     font-size: 28px;
     font-weight: 500;
   }
