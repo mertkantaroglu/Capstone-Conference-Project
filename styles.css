@@ -51,6 +51,13 @@ header {
   background-color: var(--white);
 }
 
+#conference-name {
+  background-image: url('./Images/orange-bg.png');
+  color: transparent;
+  background-size: auto;
+  -webkit-background-clip: text;
+}
+
 #conference-info {
   border: 3px solid white;
   height: auto;
@@ -58,6 +65,7 @@ header {
   text-align: start;
   padding: 10px;
   font-size: 14px;
+  border-radius: 16px;
 }
 
 #conference-info h3 {
@@ -65,6 +73,9 @@ header {
 }
 
 .main-program {
+  background-image: url('./Images/bg-img.png');
+  background-repeat: repeat;
+  background-size: 11px;
   padding: var(--section-padding);
   background-color: var(--dark-grey);
   width: auto;
@@ -81,20 +92,19 @@ header {
 
 .programs {
   display: flex;
-  gap: 5px;
-  padding: 10px 10px;
-  background: rgba(211 211 211 / 10%);
-  margin: 5px 0;
-  height: 5rem;
+  padding: 5px;
+  background: rgba(211 211 211 / 30%);
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+  margin: 5px 0;
 }
 
-  .programs:hover {
-    border: 1px solid var(--white);
-    transition: 250ms ease-in-out;
-  }
+.programs:hover {
+  border: 1px solid var(--white);
+  transition: 250ms ease-in-out;
+}
+
 .programs img {
   width: 50px;
   height: 50px;
@@ -110,11 +120,12 @@ header {
 .program-names {
   color: var(--orange);
   flex: 33%;
-  padding: 0 0 0 5px;
+  padding: 0 5px;
 }
 
 .program-details {
   flex: 60%;
+  padding-right: 5px;
 }
 
 #join-link {
@@ -210,8 +221,9 @@ header {
 }
 
 .logos img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
+  margin: 10px;
 }
 
 hr {
@@ -225,7 +237,7 @@ hr {
 .homepage2 {
   color: var(--orange);
   padding: var(--section-padding);
-  width: 105%;
+  width: auto;
   text-align: center;
   background: var(--white);
 }
@@ -237,18 +249,21 @@ hr {
   flex-direction: column;
   padding-bottom: 0;
   background: white;
+  width: auto;
 }
 
 #conference-name {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 #conference-name p {
   margin-bottom: -10px;
 }
 
-#main-title {
-  font-size: 24px;
+.homepage2 #main-name {
+  font-size: 28px;
+  width: 80%;
+  margin: auto;
 }
 
 #conference-info,
@@ -262,13 +277,17 @@ hr {
   font-size: 14px;
 }
 
-#conference-info2 p {
+#conf-mobile-info {
   font-size: 14px;
   padding: 15px;
   background: white;
   border: 1px solid lightgrey;
   line-height: 1.5;
   text-align: center;
+}
+
+#conf-desktop-info {
+  display: none;
 }
 
 #conference-contact {
@@ -300,37 +319,42 @@ hr {
   margin-bottom: 20px;
 }
 
+#conf-sect-name {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 #conf-sect-detail {
   width: 90%;
   margin: 0 auto;
 }
 
 #conf-sect-detail p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 20px 0;
 }
 
 #conf-sect-logo img {
-  width: 105%;
-  padding: 20px;
-  margin: 0 0 20px -25px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 #hr3 {
   border: 1px solid var(--grey);
-  width: 111%;
+  width: auto;
   margin: 0 auto 0 -5%;
 }
 
 .past-expo {
   background: white;
   margin-bottom: 10px;
-  width: 105%;
+  width: auto;
 }
 
 #past-expo-info h3 {
-  font-size: 20px;
-  font-weight: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
 #past-expo-info p {
@@ -338,21 +362,58 @@ hr {
   padding: 5% 0;
   text-align: center;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.conf-img {
+#expo-2020 {
+  background-image: url('./Images/past-expo1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   width: 90%;
-  height: 200px;
-  margin: 0 auto 0 6%;
-  padding: 0 0 20px 0;
+  margin: auto;
+  height: 125px;
+  margin-bottom: 20px;
+}
+
+#expo-2021 {
+  background-image: url('./Images/past-expo2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 125px;
+}
+
+.image-overlay {
+  background-color: rgba(236, 83, 66, 0.58);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#expo-detail {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#expo-detail h3 {
+  margin-bottom: -10px;
 }
 
 .partners-mobile {
   background: var(--dark-grey);
   color: var(--white);
-  width: 105%;
+  width: auto;
   text-align: center;
+  font-size: 24px;
 }
 
 .speakers-column {
@@ -368,7 +429,7 @@ hr {
   background: var(--white);
   color: var(--black);
   display: flex;
-  width: 105%;
+  width: 100%;
 }
 
 #footer-logo {
@@ -390,16 +451,31 @@ hr {
   display: none;
 }
 
-@media (min-width: 768px) {
-.header-mobile {
-  display: none;
+.mobile-menu {
+  display: none; 
+  background: var(--orange);
+  height: 100vh;
+  position: fixed;
+  font-size: 32px;
+  color: var(--white);
+  padding: 20px 20px 0 30px;
+  margin-top: -60px;
 }
 
-.header-desktop {
-  display: flex;
-  margin-top: -10px;
-  flex-direction: column;
+.mobile-menu div {
+  margin: 20px 0;
 }
+
+@media (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: column;
+  }
 
   .nav-top {
     display: flex;
@@ -424,6 +500,7 @@ hr {
     background: white;
     width: 100%;
     padding: 10px 0;
+    box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
   }
 
   #campaign {
@@ -456,30 +533,68 @@ hr {
     text-align: center;
   }
 
-  .expo-pics {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  #conf-mobile-info {
+    display: none;
   }
 
-  .conf-img {
-    width: 400px;
-    margin: 0 10px;
+  #conf-desktop-info {
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    background: white;
+    border: 1px solid lightgrey;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  #conference-contact h5 {
+    font-size: 18px;
+  }
+
+    #conference-contact p {
+      font-size: 16px;
+    }
+
+  #conf-sect-name {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  #past-expo-info h3 {
+    font-size: 28px;
+  }
+
+  .expo-details {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  #expo-detail {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  #expo-detail p {
+    text-align: center;
   }
 
   #main-title {
-    font-size: 32px;
+    font-size: 36px;
+    margin-top: -35px;
   }
 
   #conference-info {
     font-size: 14px;
-    width: 40%;
+    width: 44%;
     margin-left: 12%;
     padding-left: 2%;
-  }
-
-  #conference-info h3 {
-    width: 90%;
   }
 
   #conference-date {
@@ -496,9 +611,9 @@ hr {
   }
 
   .programs {
-    margin: 10px 10px;
+    margin: 10px 5px;
     flex-direction: column;
-    width: 8rem;
+    width: 10rem;
     text-align: center;
     height: fit-content;
   }
@@ -511,10 +626,15 @@ hr {
     margin: 0px 0 -10px 0;
     font-weight: 700;
     font-size: 18px;
+    padding: 10px;
   }
 
   .program-details {
     font-size: 12px;
+  }
+
+  #partners-desktop {
+    font-size: 24px;
   }
 
   .logos img {
@@ -527,18 +647,38 @@ hr {
   }
 
 #conference-name {  
-    width: 50%;
+    width: 65%;
     margin-left: 12%;
 }
 
-  #conference-name p {
-    font-size: 24px;
-  }
+#conference-name p {
+  font-size: 28px;
+}
+
+.homepage2 #conference-name {
+  width: 60%;
+  margin: auto;
+}
+
+.homepage2 #conference-info2 {
+  width: 70%;
+  margin: auto;
+}
 
 #main-name {
   font-size: 32px;
   width: 40%;
   margin: auto;
+}
+
+.homepage2 #main-name {
+  font-size: 36px;
+  width: auto;
+  margin: auto;
+}
+
+.homepage2 #conference-name p {
+  display: none;
 }
 
   #conference-info2 {
@@ -560,8 +700,8 @@ hr {
 
   .logos {
     display: flex;
-    gap: 3rem;
-    margin: 0 5%;
+    gap: 4rem;
+    margin: 10px 2%;
     justify-content: center;
   }
 
@@ -580,6 +720,17 @@ hr {
   .partners-mobile p {
     color: white;
     text-decoration:underline;
+  }
+
+  #expo-2020 {
+    width: 450px;
+    height: 250px;
+  }
+
+  #expo-2021 {
+    width: 450px;
+    height: 250px;
+    margin-bottom: 20px;
   }
 
   .footer-desktop {
