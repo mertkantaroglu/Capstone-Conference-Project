@@ -99,7 +99,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank for Microverse to provide me learning materials, my peers for helping me out to move forward, and also [Cindy](https://www.behance.net/adagio07) for sharing her beautiful design with us.
+I would like to thank for Microverse to provide me learning materials, my peers for helping me out to move forward, and also [Cindy Shin](https://www.behance.net/adagio07) for sharing her beautiful design with us.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -51,18 +51,26 @@ header {
   background-color: var(--white);
 }
 
-.header-desktop::after, .header-mobile::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url('./Images/luffy.jpeg');
+.homepage {
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
-  filter: grayscale(100%)
+  background:
+  linear-gradient(rgba(211,
+    211,
+    211, 0.9), rgba(211, 211, 211, 0.9)),
+  url('./Images/luffy.jpeg');
+  background-position: 0 78%;
+}
+
+.homepage2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background:
+    linear-gradient(rgba(211,
+        211,
+        211, 0.9), rgba(211, 211, 211, 0.9)),
+    url('./Images/luffy.jpeg');
+  background-position: 0 78%;
 }
 
 #conference-name {
@@ -337,7 +345,7 @@ hr {
 }
 
 #conference-date p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #conf-sect-name h3 {
@@ -435,11 +443,6 @@ hr {
   width: auto;
   text-align: center;
   font-size: 24px;
-}
-
-.speakers-column {
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .partners-desktop {
@@ -667,6 +670,17 @@ hr {
     font-size: 12px;
   }
 
+  .speakers-column {
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto 0 auto;
+  }
+
+  .first-speakers {
+    margin-right: 1rem;
+    margin-left: 4rem;
+  }
+
   #partners-desktop {
     font-size: 24px;
   }
@@ -680,40 +694,40 @@ hr {
     font-size: 22px;
   }
 
-#conference-name {  
-    width: 65%;
-    margin-left: 12%;
-}
+  #conference-name {  
+      width: 70%;
+      margin-left: 12%;
+  }
 
-#conference-name p {
-  font-size: 28px;
-}
+  #conference-name p {
+    font-size: 28px;
+  }
 
-.homepage2 #conference-name {
-  width: 60%;
-  margin: auto;
-}
+  .homepage2 #conference-name {
+    width: 60%;
+    margin: auto;
+  }
 
-.homepage2 #conference-info2 {
-  width: 70%;
-  margin: auto;
-}
+  .homepage2 #conference-info2 {
+    width: 70%;
+    margin: auto;
+  }
 
-#main-name {
-  font-size: 32px;
-  width: 40%;
-  margin: auto;
-}
+  #main-name {
+    font-size: 32px;
+    width: 40%;
+    margin: auto;
+  }
 
-.homepage2 #main-name {
-  font-size: 36px;
-  width: auto;
-  margin: auto;
-}
+  .homepage2 #main-name {
+    font-size: 36px;
+    width: auto;
+    margin: auto;
+  }
 
-.homepage2 #conference-name p {
-  display: none;
-}
+  .homepage2 #conference-name p {
+    display: none;
+  }
 
   #conference-info2 {
     width: 70%;
