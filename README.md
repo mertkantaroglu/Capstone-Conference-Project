@@ -4,7 +4,7 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Portfolio Project](#about-project)
+- [📖 About the Conference Project](#about-project)
 - [🛠 Built With](#built-with)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
@@ -40,6 +40,8 @@
 ### Key Features <a name="key-features"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+They key features for this project are homepage, about page and also mobile menu.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -86,6 +88,8 @@ To run the project, execute the following command: Click on Live server option i
 ## 🔭 Future Features <a name="future-features"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+I will create a sign-up page and photos page for the project.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
