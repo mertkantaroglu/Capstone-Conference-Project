@@ -26,6 +26,7 @@ header {
   padding: 10px 0;
   background-color: var(--white);
   width: 100%;
+  position: fixed;
 }
 
 .hamburger-menu {
@@ -46,25 +47,24 @@ header {
 .homepage {
   color: var(--orange);
   padding: var(--section-padding);
-  width: auto;
+  width: 100%;
   text-align: start;
   background-color: var(--white);
+  padding-top: 200px;
 }
 
 .homepage {
   background-repeat: no-repeat;
-  background-size: cover;
   background:
   linear-gradient(rgba(211,
     211,
     211, 0.9), rgba(211, 211, 211, 0.9)),
   url('./Images/luffy.jpeg');
-  background-position: 0 78%;
+  background-position: 0 75%;
 }
 
 .homepage2 {
   background-repeat: no-repeat;
-  background-size: cover;
   background:
     linear-gradient(rgba(211,
         211,
@@ -100,7 +100,7 @@ header {
   background-size: 11px;
   padding: var(--section-padding);
   background-color: var(--dark-grey);
-  width: auto;
+  width: 100%;
 }
 
 #main-program,
@@ -141,8 +141,9 @@ header {
 
 .program-names {
   color: var(--orange);
-  flex: 33%;
-  padding: 0 5px;
+  flex: 25%;
+  padding: 0 10px;
+  text-align: center;
 }
 
 .program-details {
@@ -174,7 +175,7 @@ header {
   flex-direction: column;
   padding: var(--section-padding);
   background: white;
-  width: auto;
+  width: 98%;
 }
 
 .speakers-column,
@@ -187,6 +188,10 @@ header {
   padding-bottom: 20px;
 }
 
+.speakers-column {
+  margin-top: 20px;
+}
+
 #feat-speakers {
   width: 60%;
   text-align: center;
@@ -195,22 +200,30 @@ header {
   font-weight: 500;
 }
 
-.speaker-details {
+.featured-speaker {
   display: flex;
   flex-direction: row;
-  margin: 20px 0 30px;
+  margin: 1rem 0;
 }
 
-.speaker-details img {
+.featured-speaker img {
   width: 100px;
   height: 100px;
   padding-left: 10px;
 }
 
-.speaker-details:hover {
+.speaker-img {
+  background-image: url('./Images/checkers-img.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-size: 50px 75px;
+  background-position: 0px 0px;
+}
+
+.featured-speaker:hover {
   border: 2px solid var(--orange);
   border-radius: 16px;
-  padding: 5px;
+  padding: 15px 10px 5px 10px;;
   width: 100%;
   transition: 250ms ease-in-out;
 }
@@ -258,7 +271,7 @@ transition: 200ms ease-in-out;
 hr {
   border: 1px solid var(--orange);
   width: 40px;
-  margin-top: -8px;
+  margin-top: -12px;
 }
 
 /* About section */
@@ -269,6 +282,7 @@ hr {
   width: auto;
   text-align: center;
   background: var(--white);
+  padding-top: 125px;
 }
 
 .conference-section {
@@ -482,29 +496,43 @@ hr {
 }
 
 .mobile-menu {
-  display: none; 
   background: var(--orange);
-  height: 100vh;
+  height: 105vh;
   position: fixed;
-  font-size: 32px;
+  font-size: 36px;
   color: var(--white);
-  padding: 20px 20px 0 30px;
-  margin-top: -60px;
+  flex-direction: column;
+  padding: 30px 0px 0px 40px;
 }
 
 .mobile-menu div {
-  margin: 20px 0;
+  margin: 5%;
 }
 
+.mobile-menu div:hover {
+  border: 4px solid white;
+  width: 77%;
+  padding: 5px 0 5px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+
 @media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
   .header-mobile {
     display: none;
   }
 
   .header-desktop {
     display: flex;
-    margin-top: -10px;
+    margin: -10px 0;
     flex-direction: column;
+    z-index: 1;
   }
 
   .nav-top {
@@ -534,7 +562,6 @@ hr {
     background: white;
     width: 100%;
     padding: 10px 0;
-    box-shadow: rgb(99 99 99 / 20%) 0 2px 8px 0;
   }
 
   .nav-bottom a {
@@ -620,6 +647,7 @@ hr {
 
   #expo-detail p {
     text-align: center;
+    font-size: 24px;
   }
 
   #main-title {
@@ -652,7 +680,6 @@ hr {
     flex-direction: column;
     width: 10rem;
     text-align: center;
-    height: fit-content;
   }
 
   .programs img {
@@ -671,14 +698,23 @@ hr {
   }
 
   .speakers-column {
-    flex-direction: row;
-    width: 80%;
-    margin: 20px auto 0 auto;
+    width: 90%;
+    padding: 1rem 4rem 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 
-  .first-speakers {
-    margin-right: 1rem;
-    margin-left: 4rem;
+  .featured-speaker {
+    min-height: 6rem;
+    margin: 1rem;
+    flex-direction: row;
+  }
+
+  .speaker-img {
+    position: relative;
+    left: 0;
+    top: 0;
   }
 
   #partners-desktop {
@@ -743,7 +779,7 @@ hr {
     flex-direction: column;
     background: var(--dark-grey);
     color: var(--grey);
-    width: auto;
+    width: 100%;
   }
 
   .logos {
