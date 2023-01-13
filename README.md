@@ -51,7 +51,7 @@ They key features for this project are homepage, about page and also mobile menu
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-[Portfolio Presentation Video](https://www.loom.com/share/8af64774b10b470588043face3f6562d)
+[Portfolio Presentation Video](https://www.loom.com/share/2168a2ce42fe4a2e944024d53f61f1ce)
 
 ### Prerequisites <a name="prerequisites"></a>
 

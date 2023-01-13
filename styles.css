@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  width: 100%;
+  width: auto;
   height: auto;
   padding: var(--section-padding);
 }
@@ -27,6 +27,7 @@ header {
   background-color: var(--white);
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .hamburger-menu {
@@ -58,7 +59,7 @@ header {
     url('./Images/luffy.jpeg');
   color: var(--orange);
   padding: var(--section-padding);
-  width: 100%;
+  width: auto;
   text-align: start;
   background-color: var(--white);
   padding-top: 200px;
@@ -94,7 +95,7 @@ header {
   background-size: 11px;
   padding: var(--section-padding);
   background-color: var(--dark-grey);
-  width: 100%;
+  width: auto;
 }
 
 #main-program,
@@ -169,7 +170,7 @@ header {
   flex-direction: column;
   padding: var(--section-padding);
   background: white;
-  width: 98%;
+  width: auto;
 }
 
 .speakers-column,
@@ -242,6 +243,28 @@ header {
   color: var(--orange);
   margin: 20px 0 5px;
   font-size: 12px;
+}
+
+.show-more {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.chevron {
+  color: var(--orange);
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 500;
 }
 
 .hr2 {
@@ -475,7 +498,7 @@ hr {
   background: var(--white);
   color: var(--black);
   display: flex;
-  height: 150px;
+  height: 13rem;
 }
 
 #footer-logo {
@@ -483,9 +506,9 @@ hr {
 }
 
 #footer-img {
-  width: 35%;
-  height: 50px;
-  margin: 25px 0 25px 55%;
+  width: 60%;
+  height: 40%;
+  margin: 20% 30%;
 }
 
 #footer-info {
@@ -494,9 +517,9 @@ hr {
 }
 
 #footer-info p {
-  padding-left: 5%;
-  padding-top: 2%;
-  font-size: 18px;
+  padding-top: 12%;
+  font-size: 12px;
+  width: 80%;
 }
 
 .footer-desktop {
@@ -505,12 +528,15 @@ hr {
 
 .mobile-menu {
   background: var(--orange);
+  color: var(--white);
   height: 105vh;
   position: fixed;
   font-size: 36px;
-  color: var(--white);
   flex-direction: column;
   padding: 30px 0 0 40px;
+  display: none;
+  width: 100%;
+  z-index: 1;
 }
 
 .mobile-menu div {
@@ -519,10 +545,16 @@ hr {
 
 .mobile-menu div:hover {
   border: 4px solid white;
-  width: 77%;
+  width: 70%;
   padding: 5px 0 5px 10px;
   border-radius: 16px;
   cursor: pointer;
+}
+
+.mobile-menu a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -536,9 +568,10 @@ hr {
 
   .header-desktop {
     display: flex;
-    margin: -10px 0;
+    margin-top: -10px;
     flex-direction: column;
     z-index: 1;
+    width: 100%;
   }
 
   .nav-top {
@@ -549,7 +582,7 @@ hr {
     color: var(--white);
     height: 2.5rem;
     align-items: center;
-    width: 100%;
+    width: auto;
   }
 
   .nav-top div:nth-child(5) {
@@ -703,7 +736,7 @@ hr {
   }
 
   .speakers-column {
-    width: 90%;
+    width: auto;
     padding: 1rem 4rem 0 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -727,8 +760,8 @@ hr {
   }
 
   .logos img {
-    width: 10%;
-    height: auto;
+    width: 100px;
+    height: 75px;
   }
 
   #feat-speakers {
@@ -742,6 +775,12 @@ hr {
 
   #conference-name p {
     font-size: 28px;
+  }
+
+  #footer-info p {
+    padding-left: 10%;
+    padding-top: 4%;
+    font-size: 20px;
   }
 
   .homepage2 #conference-name {
@@ -779,13 +818,13 @@ hr {
     flex-direction: column;
     background: var(--dark-grey);
     color: var(--grey);
-    width: 100%;
+    width: auto;
   }
 
   .logos {
     display: flex;
-    gap: 4rem;
-    margin: 10px 2%;
+    gap: 2rem;
+    margin: 10px 0;
     justify-content: center;
   }
 
@@ -816,5 +855,15 @@ hr {
     display: flex;
     background-color: var(--white);
     color: var(--black);
+    height: 10rem;
+  }
+
+  .footer-mobile {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  #footer-img {
+    margin: 6% 40%;
   }
 }
