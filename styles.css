@@ -1,0 +1,869 @@
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --grey: #d3d3d3;
+  --dark-grey: #414246;
+  --white: #f9f9f9;
+  --section-padding: 20px;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: white;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: var(--section-padding);
+}
+
+header {
+  padding: 10px 0;
+  background-color: var(--white);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.hamburger-menu {
+  margin: 10px 0 10px 1%;
+}
+
+.hamburger-menu > div {
+  width: 30px;
+  height: 3px;
+  background-color: var(--black);
+  margin: 5px 0 0 20px;
+}
+
+.header-desktop {
+  display: none;
+}
+
+.homepage {
+  background:
+    linear-gradient(
+      rgba(
+        211,
+        211,
+        211,
+        0.9
+      ),
+      rgba(211, 211, 211, 0.9)
+    ),
+    url('./Images/luffy.jpeg');
+  color: var(--orange);
+  padding: var(--section-padding);
+  width: auto;
+  text-align: start;
+  background-color: var(--white);
+  padding-top: 200px;
+  background-position: 0 75%;
+  background-repeat: no-repeat;
+}
+
+#conference-name {
+  background-image: url('./Images/orange-bg.png');
+  color: transparent;
+  background-size: auto;
+  -webkit-background-clip: text;
+  font-size: 24px;
+}
+
+#conference-info {
+  border: 3px solid white;
+  height: auto;
+  background-color: var(--white);
+  text-align: start;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 16px;
+}
+
+#conference-info h3 {
+  font-weight: 400;
+}
+
+.main-program {
+  background-image: url('./Images/bg-img.png');
+  background-repeat: repeat;
+  background-size: 11px;
+  padding: var(--section-padding);
+  background-color: var(--dark-grey);
+  width: auto;
+}
+
+#main-program,
+.program-details {
+  color: white;
+}
+
+#main-program h2 {
+  font-size: 18px;
+}
+
+.programs {
+  display: flex;
+  padding: 5px;
+  background: rgba(211 211 211 / 30%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 5px 0;
+}
+
+.programs:hover {
+  border: 1px solid var(--white);
+  transition: 250ms ease-in-out;
+}
+
+.programs img {
+  width: 50px;
+  height: 50px;
+}
+
+.program-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  justify-content: center;
+}
+
+.program-names {
+  color: var(--orange);
+  flex: 25%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.program-details {
+  flex: 60%;
+  padding-right: 5px;
+}
+
+#join-link {
+  background-color: var(--orange);
+  color: var(--white);
+  width: fit-content;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 25px 30px;
+  border-radius: 16px;
+}
+
+#see-program {
+  display: none;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+  padding: var(--section-padding);
+  background: white;
+  width: auto;
+}
+
+.speakers-column,
+#main-program,
+#past-expo-info,
+#partners-mobile,
+#partners-desktop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.speakers-column {
+  margin-top: 20px;
+}
+
+#feat-speakers {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.featured-speaker {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.featured-speaker img {
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+}
+
+.speaker-img {
+  background-image: url('./Images/checkers-img.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-size: 50px 75px;
+  background-position: 0 0;
+}
+
+.featured-speaker:hover {
+  border: 2px solid var(--orange);
+  border-radius: 16px;
+  padding: 15px 10px 5px 10px;
+  width: 100%;
+  transition: 250ms ease-in-out;
+}
+
+.speaker-info {
+  padding: 0 10px 0 20px;
+  margin-top: -20px;
+}
+
+.speaker-info p {
+  font-size: 12px;
+  line-height: 125%;
+}
+
+.speaker-name {
+  font-size: 14px;
+  margin-bottom: -10px;
+}
+
+.speaker-position {
+  color: var(--orange);
+  margin: 20px 0 5px;
+  font-size: 12px;
+}
+
+.show-more {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.chevron {
+  color: var(--orange);
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.hr2 {
+  border: 1px solid lightgrey;
+  width: 20px;
+  margin: 10px 0 0;
+}
+
+.logos img {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+.logos img:hover {
+  border: 4px solid var(--orange);
+  border-radius: 16px;
+  padding: 10px;
+  transition: 200ms ease-in-out;
+}
+
+hr {
+  border: 1px solid var(--orange);
+  width: 40px;
+  margin-top: -12px;
+}
+
+/* About section */
+
+.homepage2 {
+  background:
+    linear-gradient(
+      rgba(
+        211,
+        211,
+        211,
+        0.9
+      ),
+      rgba(211, 211, 211, 0.9)
+    ),
+    url('./Images/luffy.jpeg');
+  color: var(--orange);
+  padding: var(--section-padding);
+  width: auto;
+  text-align: center;
+  padding-top: 125px;
+  background-repeat: no-repeat;
+  background-position: 0 78%;
+}
+
+.partners-mobile p {
+  color: white;
+  text-decoration: underline;
+}
+
+.conference-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 0;
+  background: white;
+  width: auto;
+}
+
+#conference-name p {
+  margin-bottom: -10px;
+}
+
+.homepage2 #main-name {
+  font-size: 28px;
+  width: 80%;
+  margin: auto;
+}
+
+#conference-info,
+#conference-date {
+  color: var(--black);
+}
+
+#conference-info2 {
+  color: var(--black);
+  padding: 10px;
+  font-size: 14px;
+}
+
+#conf-mobile-info {
+  font-size: 14px;
+  padding: 15px;
+  background: white;
+  border: 1px solid lightgrey;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#conf-desktop-info {
+  display: none;
+}
+
+#conference-contact {
+  color: var(--black);
+  margin: 5%;
+}
+
+#conference-contact h5 {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#conference-contact p {
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#conference-date h2 {
+  margin-bottom: -5px;
+}
+
+#conference-date p {
+  margin-bottom: 40px;
+}
+
+#conf-sect-name h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#conf-sect-detail {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#conf-sect-detail p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+#conf-sect-logo img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#hr3 {
+  border: 1px solid var(--grey);
+  width: auto;
+  margin: 0 auto 0 -5%;
+}
+
+.past-expo {
+  background: white;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+#past-expo-info h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#past-expo-info p {
+  margin: 0 10%;
+  padding: 5% 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#expo-2020 {
+  background-image: url('./Images/past-expo1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 125px;
+  margin-bottom: 20px;
+}
+
+#expo-2021 {
+  background-image: url('./Images/past-expo2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 125px;
+}
+
+.image-overlay {
+  background-color: rgba(236, 83, 66, 0.58);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#expo-detail {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#expo-detail h3 {
+  margin-bottom: -10px;
+}
+
+.partners-mobile {
+  background: var(--dark-grey);
+  color: var(--white);
+  width: auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.partners-desktop {
+  display: none;
+}
+
+.footer-mobile {
+  background: var(--white);
+  color: var(--black);
+  display: flex;
+  height: 13rem;
+}
+
+#footer-logo {
+  flex: 50%;
+}
+
+#footer-img {
+  width: 60%;
+  height: 40%;
+  margin: 20% 30%;
+}
+
+#footer-info {
+  flex: 50%;
+  margin-left: 5%;
+}
+
+#footer-info p {
+  padding-top: 12%;
+  font-size: 12px;
+  width: 80%;
+}
+
+.footer-desktop {
+  display: none;
+}
+
+.mobile-menu {
+  background: var(--orange);
+  color: var(--white);
+  height: 105vh;
+  position: fixed;
+  font-size: 36px;
+  flex-direction: column;
+  padding: 30px 0 0 40px;
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.mobile-menu div {
+  margin: 5%;
+}
+
+.mobile-menu div:hover {
+  border: 4px solid white;
+  width: 70%;
+  padding: 5px 0 5px 10px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    height: 2.5rem;
+    align-items: center;
+    width: auto;
+  }
+
+  .nav-top div:nth-child(5) {
+    margin-right: 5.5%;
+  }
+
+  .nav-top div:hover {
+    color: var(--orange);
+  }
+
+  .nav-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-bottom a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+  }
+
+  #campaign {
+    margin-right: 5%;
+  }
+
+  #nav-logo {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 12%;
+  }
+
+  .nav-items:hover {
+    color: var(--orange);
+  }
+
+  .nav-bottom #campaign {
+    border: 4px solid var(--orange);
+    color: var(--orange);
+    width: 115px;
+    padding: 12px;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  #conf-mobile-info {
+    display: none;
+  }
+
+  #conf-desktop-info {
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    background: white;
+    border: 1px solid lightgrey;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #conference-contact h5 {
+    font-size: 18px;
+  }
+
+  #conference-contact p {
+    font-size: 16px;
+  }
+
+  #conf-sect-name h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  #past-expo-info h3 {
+    font-size: 28px;
+  }
+
+  .expo-details {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  #expo-detail {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  #expo-detail p {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #main-title {
+    font-size: 36px;
+    margin-top: -35px;
+  }
+
+  #conference-info {
+    font-size: 14px;
+    width: 44%;
+    margin-left: 12%;
+    padding-left: 2%;
+  }
+
+  #conference-date {
+    margin-left: 12%;
+  }
+
+  #main-program h2 {
+    font-size: 22px;
+  }
+
+  .program-box {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .programs {
+    margin: 10px 5px;
+    flex-direction: column;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .programs img {
+    margin-top: 10px;
+  }
+
+  .program-names {
+    margin: 0 0 -10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .program-details {
+    font-size: 12px;
+  }
+
+  .speakers-column {
+    width: auto;
+    padding: 1rem 4rem 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .featured-speaker {
+    min-height: 6rem;
+    margin: 1rem;
+    flex-direction: row;
+  }
+
+  .speaker-img {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  #partners-desktop {
+    font-size: 24px;
+  }
+
+  .logos img {
+    width: 100px;
+    height: 75px;
+  }
+
+  #feat-speakers {
+    font-size: 22px;
+  }
+
+  #conference-name {
+    width: 70%;
+    margin-left: 12%;
+  }
+
+  #conference-name p {
+    font-size: 28px;
+  }
+
+  #footer-info p {
+    padding-left: 10%;
+    padding-top: 4%;
+    font-size: 20px;
+  }
+
+  .homepage2 #conference-name {
+    width: 60%;
+    margin: auto;
+  }
+
+  .homepage2 #conference-info2 {
+    width: 70%;
+    margin: auto;
+  }
+
+  #main-name {
+    font-size: 32px;
+    width: 40%;
+    margin: auto;
+  }
+
+  .homepage2 #main-name {
+    font-size: 36px;
+    width: auto;
+    margin: auto;
+  }
+
+  .homepage2 #conference-name p {
+    display: none;
+  }
+
+  .partners-mobile {
+    display: none;
+  }
+
+  .partners-desktop {
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-grey);
+    color: var(--grey);
+    width: auto;
+  }
+
+  .logos {
+    display: flex;
+    gap: 2rem;
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  #join-link {
+    display: none;
+  }
+
+  #see-program {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+  }
+
+  #expo-2020 {
+    width: 450px;
+    height: 250px;
+  }
+
+  #expo-2021 {
+    width: 450px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .footer-desktop {
+    display: flex;
+    background-color: var(--white);
+    color: var(--black);
+    height: 10rem;
+  }
+
+  .footer-mobile {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  #footer-img {
+    margin: 6% 40%;
+  }
+}
